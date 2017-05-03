@@ -9,8 +9,8 @@
 from collections import OrderedDict
 
 
-def eliminate_dupes(sequence):
-    return list(OrderedDict.fromkeys(sequence.split()))
+def eliminate_dupes(l):
+    return list(OrderedDict.fromkeys(l))
 
-
-print eliminate_dupes('a a a a b c c a a d e e e e')
+l = ["a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"]
+print eliminate_dupes(l)
